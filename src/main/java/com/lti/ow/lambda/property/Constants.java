@@ -1,0 +1,77 @@
+package com.lti.ow.lambda.property;
+
+public class Constants {
+	
+	public static final String  KEY_OPC_SERVER_IP = "Opc_server_ip";
+	public static final String  KEY_OPC_SERVER_USER = "Opc_server_user";
+	public static final String  KEY_OPC_SERVER_PWD = "Opc_server_pwd";
+	public static final String  KEY_OPC_SERVER_DOMAIN = "Opc_server_domain";
+	public static final String  KEY_OPC_SERVER_CLSID = "Opc_server_clsid";
+	public static final String  KEY_OPC_SERVER_PROGID = "Opc_server_progId";
+	public static final String  KEY_OPC_SERVER_RECONN_INTERVAL = "Retry_Interval";
+	public static final String  KEY_TAG_READ_INTERVAL_DIGITAL = "DRead_Interval";
+	public static final String  KEY_TAG_READ_INTERVAL_ANALOG = "ARead_Interval";
+	public static final String  KEY_TAG_READ_INTERVAL_CALCULATED = "Efficiency_Interval";
+	public static final String  KEY_TAG_PUBLISH_TOPIC_DIGITAL = "Digital_Topic";
+	public static final String  KEY_TAG_PUBLISH_TOPIC_ANALOG = "Analog_Topic";
+	public static final String  KEY_TAG_THRESHOLD_JSON_ARRAY = "Slicing_Threshold";
+	public static final String  KEY_TAG_THRESHOLD_QUALITY = "Acceptable_Quality";
+	public static final String  KEY_TAG_LIST_PATH = "Tag_list_path";
+	public static final String  KEY_TAG_LIST_EFF_PATH = "Overall_Eff_Taglist_path";
+	public static final String  KEY_TAG_IDENTIFIER_DIGITAL = "Digital_Identifier"; 
+	public static final String  KEY_TAG_IDENTIFIER_ANALOG = "Analog_Identifier";
+	public static final String  KEY_TAG_IDENTIFIER_PUMP = "Pump_Identifier";
+	public static final String  KEY_AWS_SQS_ACCESS = "accessKey"; // never to be changed
+	public static final String  KEY_AWS_SQS_SECRET = "secretKey"; // never to be changed
+	public static final String  KEY_AWS_SQS_QUEUE_URL = "https://sqs.us-east-1.amazonaws.com/208360692836/sampleQueueOperaWater";
+	public static final String  KEY_AWS_SQS_CREDENTIAL_PATH = "Aws_credential_path";
+	public static final String  KEY_AWS_S3_BUCKET = "Bucket";
+	public static final String  KEY_AWS_S3_BUCKET_BATCH_PATH = "Bucket_Batch_Path";
+	public static final String  KEY_AWS_S3_BUCKET_TAG_PATH = "Bucket_Tag_Path";
+	public static final String  KEY_AWS_REGION = "Region";
+	public static final String  KEY_SQS_MESSAGE_FORMAT = "Alert_format";
+	public static final String  KEY_SQLITE_DB_URL = "DBUrl";
+	public static final String  KEY_SQLITE_OPS_CREATE = "CreateTable";
+	public static final String  KEY_SQLITE_OPS_INSERT = "InsertRow";
+	public static final String  KEY_SQLITE_OPS_DELETE = "DeleteRow";
+	public static final String  KEY_SQLITE_DB_PURGE_INTERVAL = "DB_Purge_Days";
+	public static final String  KEY_LOG4J_CONFIG_PATH = "Log4j_config_path";
+	public static final String  KEY_RWPH_WT = "RWPH_WT";
+	public static final String  KEY_WTP_WT = "WTP_WT";
+	public static final String  KEY_CWPH1_WT = "CWPH1_WT";
+	public static final String  KEY_CWPH2_WT = "CWPH2_WT";
+	public static final String  KEY_CWPH3_WT = "CWPH3_WT";
+	public static final String  KEY_CWPH4_WT = "CWPH4_WT";
+	public static final String  KEY_OVERALL_EFF_TAG_ID = "Overall_Eff_Tag_Id";
+	public static final String  KEY_OVERALL_EFF_TOPIC = "Overall_Eff_Topic";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_RWPH = "OVERALL_EFF_PLANT_ID_RWPH";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_WTP = "OVERALL_EFF_PLANT_ID_WTP";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_CWPH01 = "OVERALL_EFF_PLANT_ID_CWPH01";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_CWPH02 = "OVERALL_EFF_PLANT_ID_CWPH02";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_CWPH03 = "OVERALL_EFF_PLANT_ID_CWPH03";
+	public static final String  KEY_OVERALL_EFF_PLANT_ID_CWPH04 = "OVERALL_EFF_PLANT_ID_CWPH04";
+	public static final String  KEY_CSV_LOG_HOURS = "CSV_LOG_HOURS";
+	public static final String  KEY_CSV_LOG_MINUTES = "CSV_LOG_MINUTES";
+	public static final String  KEY_CSV_LOG_MILIS_INTERVAL = "CSV_LOG_MILIS_INTERVAL";
+	public static final String  KEY_CSV_LOG_VERIFIER_API = "CSV_LOG_VERIFIER_API";
+	public static final String  KEY_CSV_LOG_VERIFIER_REQ_FORMAT = "CSV_LOG_VERIFIER_REQ_FORMAT";
+	
+	public static final String CONFIG_FILE_PATH = "/home/operawater/Edge/OperaWater/Config/config.properties";
+	public static final String TIMESTAMP_FORMAT = "yyyy-MM-dd HH:mm:ss";
+	public static final String TAG_READ_STATUS_BAD = "bad";
+	public static final String TAG_READ_STATUS_GOOD = "good";
+	public static final String BATCH_LOG_COULUM1 = "batchType";
+	public static final String BATCH_LOG_COULUM2 = "timestamp";
+	public static final String BATCH_LOG_COULUM3 = "tagCount";
+	public static final String BATCH_LOG_FILE_PATH = "/home/operawater/Edge/OperaWater/Logs/CsvLogs/BatchRecordLog_Edge_%s.csv";
+	public static final String TAG_LOG_COULUM1 = "tagId";
+	public static final String TAG_LOG_COULUM2 = "tagName";
+	public static final String TAG_LOG_COULUM3 = "tagType";
+	public static final String TAG_LOG_COULUM4 = "readCount";
+	public static final String TAG_LOG_FILE_PATH = "/home/operawater/Edge/OperaWater/Logs/CsvLogs/TagsReadLog_Edge_%s.csv";
+	public static final String CSV_LOG_TYPE_BATCH = "batchFile";
+	public static final String CSV_LOG_TYPE_TAG = "tagFile";
+	public static final String CSV_LOG_VERIFIER_API_RESPONSE_FIELD = "status";
+	public static final String CSV_LOG_VERIFIER_API_RESPONSE_FIELD_VALUE = "Success";
+	public static final String APP_LOG_FILE_PATH = "/home/operawater/Edge/OperaWater/Logs/OperaWater_Edge.log.%s";
+}
